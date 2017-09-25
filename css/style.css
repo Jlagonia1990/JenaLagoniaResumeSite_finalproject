@@ -2,9 +2,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
-    font: 8px Roboto, sans-serif;
-    background-image: url(http://thezoereport.com/wp-content/uploads/2017/07/FMH2-VIEWS-1461.jpg)
+    background-image: url(http://thezoereport.com/wp-content/uploads/2017/07/FMH2-VIEWS-1461.jpg);
 }
+
 
 a {
     text-decoration: none;
@@ -16,10 +16,26 @@ a {
   padding: 0;
 }
 
+.celebrate {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+
 .topnav{
     background: black;
     height: 80px;
     width: 100%;
+    border-bottom: 10px solid   #E8E8E8;
+}
+.wrapper img{
+ margin-left: auto;
+ margin-right: auto;
+ position: absolute;
+ left: 140%;
+ width: 420px;
+
+ padding: 5%;
 }
 
 /* Let's style the wrapper in such away that, 
@@ -32,8 +48,7 @@ it should always be at the center of the browser */
   left: 10%;
   transform: translate(-50%, -50%);
   background: black;
- 
-
+  font: 8px Roboto, sans-serif;
 }
 
 /* Style the Un-order list by setting its list-style to none */
@@ -64,6 +79,11 @@ to align it properly */
   margin-top: 10px;
   transition: all 0.5s ease;
 }
+
+.pricelabel{
+    font-weight: bold;
+}
+
 
 /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
   to icons for glowing effect and use transition property for smooth transition effect. */
@@ -145,4 +165,17 @@ to align it properly */
   .wrapper ul li.google{
       margin-left: 15px;
   }
+
 }
+div.transbox {
+  background-color: #ffffff;
+  margin: 0 auto;
+  width:  700px;
+  height: 600px;
+  box-shadow:  10px 10px 5px #888888;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: url(file:///Users/Lagonia/Downloads/Butler_and_ButlerStencil/Butler_Webfont/butler_bold-demo.html);
+  text-align: center;
+  }
+
