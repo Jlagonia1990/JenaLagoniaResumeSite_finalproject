@@ -1,181 +1,123 @@
-body {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100vh;
-    background-image: url(http://thezoereport.com/wp-content/uploads/2017/07/FMH2-VIEWS-1461.jpg);
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
-
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.celebrate {
-    font-size: 20px;
-    font-weight: lighter;
-}
-
-
-.topnav{
-    background: black;
-    height: 80px;
-    width: 100%;
-    border-bottom: 10px solid   #E8E8E8;
-}
-.wrapper img{
- margin-left: auto;
- margin-right: auto;
- position: absolute;
- left: 140%;
- width: 420px;
-
- padding: 5%;
-}
-
-/* Let's style the wrapper in such away that, 
-it should always be at the center of the browser */
-.wrapper { 
+.topnav a {
   float: left;
   display: block;
-  position: absolute;
-  top: 4%;
-  left: 10%;
-  transform: translate(-50%, -50%);
-  background: black;
-  font: 8px Roboto, sans-serif;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Fugaz One', cursive;
+}
+@font-face {
+     font-family: 'Unica One', cursive;
+     src: url('https://fonts.googleapis.com/css?family=Unica+One');
+     src: url('https://fonts.googleapis.com/css?family=Fugaz+One"');
+   }
+
+    div.Jena{
+    font-family: 'Unica One', cursive;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 80px;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: .04em;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    line-height: 1em;
+    height: 100px;
+    text-align: center;
+    border-bottom: solid;
+    margin-right: 100px;
+  }
+
+@import url(https://fonts.googleapis.com/css?family=Raleway+Dots);
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:400,200,700);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
 }
 
-/* Style the Un-order list by setting its list-style to none */
-.wrapper ul {
+html, body {
+  margin: 0;
+  background-color: #F8F8F8;;
+}
+
+section #services ul {
+  text-align: center;
+  transform: translatez(0);  
+}
+
+section #services ul{
+  height: 90px;
+  width: 90px;
+}
+
+section #services h2 {
+  margin: 80px 0px 40px;
+  color: #A0A0A0;
+  font-size: 2.4em;
+  font-family: 'Raleway Dots', sans-serif;
+  text-transform: uppercase;
+}
+section #services li {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: 20px;
   list-style: none;
 }
-
-/* Style the list items inside the UL list, by setting its width, height and line-height 
-  and float them to left and set its border and border-radius.
- */
-.wrapper ul li {
-  width: 38px;
-  height: 38px;
-  line-height: 35px;
-  margin: 0 10px;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 50%;
-  border: 1px solid #D8E2DC;
-  float: left;
+section #services li div {
+  width: 50px;
+  height: 50px;
+  color: #74d4b3;
+  font-size: 3.4em;
+  background-color: #A0A0A0;
   transition: all 0.5s ease;
 }
-
-/* Style the icons by setting its color and margin-top value to 20px 
-to align it properly */
-.wrapper ul li .fa {
-  color: #D8E2DC;
-  margin-top: 10px;
-  transition: all 0.5s ease;
+section #services li div:hover {
+  transform: rotate(360deg);
+  border-radius: 100px;
+}
+section #services li span {
+  width: 50px;
+  height: 50px;
+  color: #A0A0A0;
+  font-family: 'Advent Pro', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2em;
 }
 
-.pricelabel{
-    font-weight: bold;
-}
-
-
-/* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
-  to icons for glowing effect and use transition property for smooth transition effect. */
-/*facebook*/
-.wrapper ul li:hover.facebook {
-  border: 5px solid #3b5998;
-  box-shadow: 0 0 15px #3b5998;
-  transition: all 0.5s ease;
-}
-
-.wrapper ul li:hover .fa-facebook {
-  color: #3b5998;
-  text-shadow: 0 0 15px #3b5998;
-  transition: all 0.5s ease;
-}
-
-/*twitter*/
-.wrapper ul li:hover.twitter {
-  border: 5px solid #00aced;
-  box-shadow: 0 0 15px #00aced;
-  transition: all 0.5s ease;
-}
-
-.wrapper ul li:hover .fa-twitter {
-  color: #00aced;
-  text-shadow: 0 0 15px #00aced;
-  transition: all 0.5s ease;
-}
-
-/* instagram */
-.wrapper ul li:hover.instagram {
-  border: 5px solid #bc2a8d;
-  box-shadow: 0 0 15px #bc2a8d;
-  transition: all 0.5s ease;
-}
-
-.wrapper ul li:hover .fa-instagram {
-  color: #bc2a8d;
-  text-shadow: 0 0 15px #bc2a8d;
-  transition: all 0.5s ease;
-}
-/* Pinterest */
-.wrapper ul li:hover.pinterest {
-  border: 5px solid #B80000 ;
-  box-shadow: 0 0 15px #B80000 ;
-  transition: all 0.5s ease;
-}
-
-.wrapper ul li:hover .fa-pinterest {
-  color: #B80000 ;
-  text-shadow: 0 0 15px #B80000 ;
-  transition: all 0.5s ease;
-}
-
-}
-
-/* media queries */
-
-@media screen and (max-width: 640px){
-  .wrapper {
-      width: 350px;
-  }
-  .wrapper ul li{
-      margin-top: 10px;
-  }
-  .wrapper ul li.google{
-      margin-left: 60px;
-  }
+.socialbuttons{
+  position: absolute;
+  bottom: 62%;
 }
 
 
-@media screen and (max-width: 340px){
-  .wrapper {
-      width: 150px;
-  }
-  .wrapper ul li{
-      margin:15px;
-  }
-  .wrapper ul li.google{
-      margin-left: 15px;
-  }
-
+.entypo-instagram{
+  content: url(http://cobymcdougalldesign.com/images/instagram.png);
+  position: absolute;
 }
-div.transbox {
-  background-color: #ffffff;
-  margin: 0 auto;
-  width:  700px;
-  height: 600px;
-  box-shadow:  10px 10px 5px #888888;
-  font-size: 30px;
-  font-weight: bold;
-  font-style: url(file:///Users/Lagonia/Downloads/Butler_and_ButlerStencil/Butler_Webfont/butler_bold-demo.html);
-  text-align: center;
-  }
+.entypo-linkedin{
+  content: url(http://downloadicons.net/sites/default/files/linkedin-logo-icon-75239.png);
+  position: relative;
+  float: right;
+}
+ .image{
+   box-shadow: 2px 2px  #888888;
+ }
+ .main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 100px;
+ }
 
+  
