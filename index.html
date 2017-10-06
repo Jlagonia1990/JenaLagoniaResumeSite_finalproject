@@ -5,6 +5,8 @@
         <meta charset="utf-8">
         <meta name="description" content="Your description goes here">
         <meta name="keywords" content="one, two, three">
+        <meta name="viewport" content="width=device-width,
+ height=device-height, initial-scale=1.0, minimum-scale=1.0">
 
         <title> Jena Lagonia </title>
 
@@ -13,45 +15,68 @@
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
-         <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous">
   </script>
-  <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 </head>
 <body> 
 <div class="topnav" id="myTopnav">
-  <a href="#home">Resume</a>
-  <a href="#news">Portfolio</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+  <a href="#home">Home</a>
+  <a href="#news">Resume</a>
+  <a href="#contact">Portfolio</a>
+  <a href="#about">Contact</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 <div style="padding-left:16px">
 </div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
         <header>
    <div class= "Jena"><span>
     JENA LAGONIA</span>
-    <section>
-      <div class="socialbuttons">
-  <ul id='services'>
-    <li> <a href="https://www.instagram.com/jenalagonia/?hl=en">
-    <div class="entypo-instagram"></div>
-  </a>
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/in/jena-lagonia-39626522/">
-      <div class='entypo-linkedin'></div>
-    </a>
-    </li>
-  </ul>
-</div>
-</section>
  </div>
 </header>
    <div class= "main">
-    <img src="https://i.pinimg.com/736x/dc/e4/dc/dce4dcf2dea493ea24641fa0dd1fb8da--desk-inspiration-office-desks.jpg" class="image">
+    <img src="https://i.pinimg.com/736x/dc/e4/dc/dce4dcf2dea493ea24641fa0dd1fb8da--desk-inspiration-office-desks.jpg" width="700" height="1000" alt="Avatar" class="image">
+     <div class="middle">
+    <div class="text">
+      <a href="https://www.linkedin.com/in/jena-lagonia-39626522/">
+      <img src="http://icons.iconarchive.com/icons/iconsmind/outline/512/Linkedin-2-icon.png" height="50" width="50">
+      </a>
+    </div>
+  </div>
 </div>
+<svg class="intro" viewbox="0 0 200 86">
+  <text text-anchor="start" x="10" y="30" class="text text-stroke" clip-path="url(#text1)">Where</text>
+  <text text-anchor="start" x="10" y="50" class="text text-stroke" clip-path="url(#text2)">Ideas</text>
+  <text text-anchor="start" x="10" y="70" class="text text-stroke" clip-path="url(#text3)">Begin.</text>
+  <text text-anchor="start" x="10" y="30" class="text text-stroke text-stroke-2" clip-path="url(#text1)">Where</text>
+  <text text-anchor="start" x="10" y="50" class="text text-stroke text-stroke-2" clip-path="url(#text2)">Ideas</text>
+  <text text-anchor="start" x="10" y="70" class="text text-stroke text-stroke-2" clip-path="url(#text3)">Begin.</text>
+  <defs>
+    <clipPath id="text1">
+      <text text-anchor="start" x="10" y="30" class="text">Where</text>
+    </clipPath>
+    <clipPath id="text2">
+      <text text-anchor="start" x="10" y="50" class="text">Ideas</text>
+    </clipPath>
+    <clipPath id="text3">
+      <text text-anchor="start" x="10" y="70" class="text">Begin.</text>
+    </clipPath>
+  </defs>
+</svg>
+<div>
+
+
 
        
