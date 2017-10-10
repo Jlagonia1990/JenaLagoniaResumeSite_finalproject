@@ -1,13 +1,11 @@
-$(function() {
-  $(".intro").addClass("go");
-
-  $(".reload").click(function() {
-    $(".intro")
-      .removeClass("go")
-      .delay(200)
-      .queue(function(next) {
-        $(".intro").addClass("go");
-        next();
-      });
-  });
+$(function(){
+    $('.repeat').click(function(){
+        var classes =  $(this).parent().attr('class');
+        $(this).parent().attr('class', 'animate');
+        var indicator = $(this);
+        setTimeout(function(){ 
+            $(indicator).parent().addClass(classes);
+        }, 20);
+    });
 });
+
