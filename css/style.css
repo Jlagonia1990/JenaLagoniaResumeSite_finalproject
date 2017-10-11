@@ -390,7 +390,6 @@ article, aside, details, figcaption, figure, footer, hgroup, main, menu, nav, se
 
 
 .tabs {
-  display: inline-block;
   background: url(http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/ultra-glossy-silver-buttons-icons-social-media-logos/102377-ultra-glossy-silver-button-icon-social-media-logos-linkedin-logo-square2.png);
   background-repeat: no-repeat;
   background-size: 85px 89px;
@@ -400,6 +399,7 @@ article, aside, details, figcaption, figure, footer, hgroup, main, menu, nav, se
   overflow: hidden;
   position: relative;
   margin: 0;
+  margin-left: 40px;
   font-size: 16px;
   font-family: 'Unica One', cursive;
   -moz-transition: all 0.4s ease-in-out 0.1s;
@@ -475,6 +475,7 @@ article, aside, details, figcaption, figure, footer, hgroup, main, menu, nav, se
 .linkedin-icon a:before, .linkedin-icon a:after {
   content: '\f208';
 }
+
 .linkedin-icon a:after {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00a9cd), color-stop(100%, black);
   background-image: -moz-linear-gradient(black, #0083b4);
@@ -482,8 +483,12 @@ article, aside, details, figcaption, figure, footer, hgroup, main, menu, nav, se
   background-image: linear-gradient(black, #0083b4);
 }
 
+.container {
+  font-weight: bold;
+  font-size: 100px;
+  font-family: 'Unica One', cursive;
+}
 
- 
 
 
 
