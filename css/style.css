@@ -1,9 +1,14 @@
-body, html {
-background: url(https://i.pinimg.com/originals/59/96/d2/5996d2cfcea828cf82835a41117b9bcd.jpg);
-}
+ html {
+  background: url(http://www.salbii.com/wp-content/themes/salbii/images/wp-admin/layout-backgrounds/bgimg3.jpg);
+  background-repeat: no-repeat;
+  margin-top: 5px;
+  margin-bottom:5px;
+  margin-right: 5px;
+  margin-left:5px;
+  }
 
-body{
-  border: solid;
+header{
+  height: 100px;
 }
 
 
@@ -18,7 +23,7 @@ body{
   color: black;
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 20px;
   text-decoration: none;
   font-size: 17px;
   font-family: 'Unica One', cursive;
@@ -67,7 +72,7 @@ body{
     background-color:   #000000;
     font-weight: 800;
     letter-spacing: 1px;
-    font-size: 65px;
+    font-size: 85px;
     text-transform: none;
     text-decoration: white;
     letter-spacing: .04em;
@@ -75,11 +80,12 @@ body{
     font-style: normal;
     display: block;
     line-height: 1em;
-    height: 80px;
+    height: 100px;
     padding: 10px;
     text-align: center;
     border-bottom: double;
     border-bottom-width: 100%;
+
   }
 
 @media only screen and (max-width: 600px) {
@@ -90,18 +96,17 @@ body{
   }
 }
  .image{
-   box-shadow: 2px 2px  #888888;
    width: 100%;
-   height: auto;
+   height: 900px;
    opacity: 1;
    transition: .5s ease;
-   backface-visibility: hidden;
  }
  .main {
    display: flex;
    justify-content: center;
    align-items: center;
    padding: 20px;
+   height: 300px;
  }
 
 {
@@ -129,21 +134,28 @@ ul
 .container {
     width: 100%;
     margin: auto;
-    font-weight: 900;
-    text-transform: uppercase;
     text-align: center;
+    font-family: 'Unica One', cursive;
 }
 
 .animate {
-    font-size: 20px;
+    font-size: 45px;
+    font-family: 'Unica One', cursive;
     padding: 20px;
     text-decoration;
+  }
+
+  .animate.one{
+    font-family: 'Unica One', cursive;
     background: url(https://static.pexels.com/photos/433639/pexels-photo-433639.jpeg);
-    background-repeat: no-repeat;
+    margin-top: -100px;
+    margin-bottom: 400px;
+    background-position: fixed;
     background-size: 100%;
-    height: 400px;
+    background-repeat: no-repeat;
     border-bottom: double;
-}
+    border-bottom-width: 100%;
+  }
 
 
 .animate span {
@@ -204,6 +216,7 @@ a.repeat {
 
 .one span {
     color: black;
+    font-family: 'Unica One', cursive;
     opacity: 0;
     transform: translate(-150px, -50px) rotate(-180deg) scale(3);
     animation: revolveScale 3s forwards;
@@ -224,52 +237,253 @@ a.repeat {
   div.animate{
     border-bottom: none;
     font-size: 20px;
-    background-color: white;
+    font-family: 'Unica One', cursive;
     height: 200px;
   }
 }
 
-}
-div.me {
-  background: url(https://i.pinimg.com/originals/59/96/d2/5996d2cfcea828cf82835a41117b9bcd.jpg);
-  border-bottom: solid;
-  background: url(https://i.pinimg.com/originals/59/96/d2/5996d2cfcea828cf82835a41117b9bcd.jpg)
+.me{
+  width: 100%;
+  height: 400px;
+  margin-top: 500px;
 
 }
 
 p {
   line-height: 1.6; 
   font-family: 'Unica One', cursive;
-  text-align: justify;
+  text-align: center;
   margin-right: 5px;
-  font-size: 15px;
+  margin-top: 200px;
+  font-size: 20px;
   text-decoration: 
 }
 
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
 .atwork{
-  font-size: 30px;
-
+  font-size: 35px;
+  border-right: .1em solid black;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 
-#face {
-  float: left;
-  padding: .2%;
-  width: 152px;
-  height: 200px;
-  shape-outside: url(file:///Users/dianelagonia/Downloads/IMG_8256%20(1).jpg);
-  shape-margin:5px;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  border: outset 5px;
-}
 .highlight{
   background-color: white;
-
-
 }
 
 
 
+
+/* Updated version - 24th Nov 2014 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  font-family: 'Unica One', cursive;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+[class*="genericon"] {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1;
+  font-family: 'Genericons';
+  text-decoration: inherit;
+  font-weight: normal;
+  font-style: normal;
+ font-family: 'Unica One', cursive;
+  vertical-align: top;
+}
+
+/* IE7 */
+[class*="genericon"] {
+  *overflow: auto;
+  *zoom: 1;
+  *display: inline;
+}
+
+.container {
+  margin: 100px auto;
+}
+
+.accordion {
+  background: #808080;
+  width: 100%;
+  min-width: 950px;
+  display: block;
+  position: fixed;
+  left: 0;
+  bottom:0;
+  list-style-type: none;
+  overflow: hidden;
+  height: 100px;
+  font-size: 0;
+  font-family: 'Unica One', cursive;
+}
+
+
+.tabs {
+  display: inline-block;
+  background: url(http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/ultra-glossy-silver-buttons-icons-social-media-logos/102377-ultra-glossy-silver-button-icon-social-media-logos-linkedin-logo-square2.png);
+  background-repeat: no-repeat;
+  background-size: 85px 89px;
+  border-right: black 1px solid;
+  width: 80px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Unica One', cursive;
+  -moz-transition: all 0.4s ease-in-out 0.1s;
+  -o-transition: all 0.4s ease-in-out 0.1s;
+  -webkit-transition: all 0.4s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+  transition: all 0.4s ease-in-out 0.1s;
+}
+.tabs:hover {
+  width: 450px;
+}
+.tabs:hover .social-links a:before {
+  margin-left: -100px;
+}
+.tabs:hover .social-links a:after {
+  margin-left: -5px;
+}
+.tabs .paragraph {
+  position: relative;
+  width: 360px;
+  margin-left: 80px;
+  padding: 50px 0 0 10px;
+  height: 200px;
+  background: #fff;
+}
+.tabs .paragraph h1 {
+  font-size: 2.5em;
+  font-family: 'Unica One', cursive;
+  margin-bottom: 10px;
+}
+.tabs .paragraph p {
+  font-size: 0.88em;
+  line-height: 1.5em;
+  padding-right: 30px;
+}
+
+.social-links {
+  display: block;
+}
+.social-links a {
+  display: block;
+  text-indent: -9999px;
+  font-size: 0;
+  font-family: 'Unica One', cursive;
+  line-height: 0;
+}
+.social-links a:before, .social-links a:after {
+  -moz-transition: all 0.4s ease-in-out 0.1s;
+  -o-transition: all 0.4s ease-in-out 0.1s;
+  -webkit-transition: all 0.4s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+  transition: all 0.4s ease-in-out 0.1s;
+  width: 80px;
+  height: 200px;
+  position: absolute;
+  text-indent: 0;
+  padding-top: 90px;
+  padding-left: 25px;
+  display: block;
+  font: normal 30px;
+  font-family: 'Unica One', cursive;
+  color: #fff;
+}
+.social-links a:after {
+  background-color: black;
+  font-size: 48px;
+  font-family: 'Unica One', cursive;
+  padding-left: 20px;
+  padding-top: 80px;
+  margin-left: 85px;
+}
+
+.linkedin-icon a:before, .linkedin-icon a:after {
+  content: '\f208';
+}
+.linkedin-icon a:after {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00a9cd), color-stop(100%, black);
+  background-image: -moz-linear-gradient(black, #0083b4);
+  background-image: -webkit-linear-gradient(black, #0083b4);
+  background-image: linear-gradient(black, #0083b4);
+}
+
+
+ 
 
 
 
